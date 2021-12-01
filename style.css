@@ -1,0 +1,74 @@
+body{
+    background: rgb(143,213,214);
+background: linear-gradient(0deg, rgba(143,213,214,1) 2%, rgba(255,255,255,1) 84%);
+    height: 100vh;
+}
+.container-top{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin:120px auto;
+}
+.container-bottom{
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 0 auto;
+    width: 80%;
+}
+.playpause{
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-family: 'oswald';
+    font-size: 45px;
+}
+
+
+i{
+    font-size: 30px;
+    padding: 10px;
+}
+#galery  img.hidden{
+    display: none;
+}
+
+#galery img{
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+#galery  img.show{
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        width: 100%;
+        margin: 60px auto;
+    }
+    .container-top{
+        width: 100%;
+    }
+    
+}
