@@ -70,3 +70,14 @@ document.querySelector('#pause').addEventListener('click' , function(){
         clearInterval(interval);
 //ClearInterval prend en paramètre le nom de l'interval de temps créer juste avant
         });
+
+//gestion touche clavier
+window.addEventListener('keydown', function(e){ // e va contenir l'evenement
+//sur objet global window event quand on presse touche clavier
+    if(e.key == 'ArrowRight'){ //si on fait flèche vers la droite
+        next() //on applique la fonction next
+    }
+    if(e.key == 'ArrowLeft'){ //si on fait flèche vers la gauche
+        previous() //on applique la fonction previous
+    }
+})
